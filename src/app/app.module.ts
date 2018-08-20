@@ -3,14 +3,27 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { UsersComponent } from './users/users.component';
+import { DetailsComponent } from './details/details.component';
+import { PublicComponent } from './public/public.component';
+
+import { HttpClientModule } from "@angular/common/http";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations"
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidebarComponent,
+    UsersComponent,
+    DetailsComponent,
+    PublicComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
